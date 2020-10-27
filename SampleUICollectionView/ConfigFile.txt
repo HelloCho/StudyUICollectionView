@@ -1,0 +1,13 @@
+# APi Key는 Public에 올리시면 안돼요!
+
+.xcconfig 파일을 만들어서 동적으로 불러와주세요
+
+사용 방법은 
+
+File 생성에서 xcconfig를 만든 후,
+
+    API_KEY=example-api-key-ksdjfoqej134rot42958jt*3456gndrgds
+
+API_KEY는 공공데이터에서 받은 자신의 공개키를 입력하시고
+
+불러오는식으로 하셔야해요
