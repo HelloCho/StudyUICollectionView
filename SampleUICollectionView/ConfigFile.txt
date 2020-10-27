@@ -11,3 +11,8 @@ File 생성에서 xcconfig를 만든 후,
 API_KEY는 공공데이터에서 받은 자신의 공개키를 입력하시고
 
 불러오는식으로 하셔야해요
+
+참조 :
+    
+    https://www.appcoda.com/xcconfig-guide/
+    https://medium.com/better-programming/working-with-xcode-configuration-files-398cfbe02b64
