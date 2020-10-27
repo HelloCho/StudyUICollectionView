@@ -8,6 +8,9 @@
 .AppleDouble
 .LSOverride
 
+# Configuration
+.xcconfig
+
 # Icon must end with two \r
 Icon
 
