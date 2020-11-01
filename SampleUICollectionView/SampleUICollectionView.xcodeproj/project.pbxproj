@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B01C30D5A4FF78F750B16F8C /* Pods_SampleUICollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F9D475930F31012FC85298 /* Pods_SampleUICollectionView.framework */; };
+		DABBA08F254E4CE2006CD148 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABBA08E254E4CE2006CD148 /* Alamofire.framework */; };
 		DAC4B48C25484F7C00863848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4B48B25484F7C00863848 /* AppDelegate.swift */; };
 		DAC4B48E25484F7C00863848 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4B48D25484F7C00863848 /* SceneDelegate.swift */; };
 		DAC4B49025484F7C00863848 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC4B48F25484F7C00863848 /* ViewController.swift */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67F9D475930F31012FC85298 /* Pods_SampleUICollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleUICollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9820E8F4054DD3615934E51E /* Pods-SampleUICollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleUICollectionView.debug.xcconfig"; path = "Target Support Files/Pods-SampleUICollectionView/Pods-SampleUICollectionView.debug.xcconfig"; sourceTree = "<group>"; };
+		DABBA08E254E4CE2006CD148 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC4B48825484F7C00863848 /* SampleUICollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleUICollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC4B48B25484F7C00863848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAC4B48D25484F7C00863848 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +32,7 @@
 		DAC4B49925484F7C00863848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAC4B4A12548514000863848 /* ApiConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ApiConfig.xcconfig; sourceTree = "<group>"; };
 		DAC4B4A3254852AB00863848 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		EA641C287A1CC7D858819DD2 /* Pods-SampleUICollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleUICollectionView.release.xcconfig"; path = "Target Support Files/Pods-SampleUICollectionView/Pods-SampleUICollectionView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,18 +40,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABBA08F254E4CE2006CD148 /* Alamofire.framework in Frameworks */,
+				B01C30D5A4FF78F750B16F8C /* Pods_SampleUICollectionView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DAC4B47F25484F7C00863848 = {
+		2A4A45F5F7DB5D1DF66F2F0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9820E8F4054DD3615934E51E /* Pods-SampleUICollectionView.debug.xcconfig */,
+				EA641C287A1CC7D858819DD2 /* Pods-SampleUICollectionView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA18E105254D0011000CCFD8 /* Config */ = {
 			isa = PBXGroup;
 			children = (
 				DAC4B4A12548514000863848 /* ApiConfig.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		DAC4B47F25484F7C00863848 = {
+			isa = PBXGroup;
+			children = (
+				DA18E105254D0011000CCFD8 /* Config */,
 				DAC4B48A25484F7C00863848 /* SampleUICollectionView */,
 				DAC4B48925484F7C00863848 /* Products */,
+				2A4A45F5F7DB5D1DF66F2F0A /* Pods */,
+				F1CBA4C8BE614D0D48ECC443 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +99,15 @@
 			path = SampleUICollectionView;
 			sourceTree = "<group>";
 		};
+		F1CBA4C8BE614D0D48ECC443 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DABBA08E254E4CE2006CD148 /* Alamofire.framework */,
+				67F9D475930F31012FC85298 /* Pods_SampleUICollectionView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAC4B49C25484F7C00863848 /* Build configuration list for PBXNativeTarget "SampleUICollectionView" */;
 			buildPhases = (
+				29CD43011096CA83654D8C44 /* [CP] Check Pods Manifest.lock */,
 				DAC4B48425484F7C00863848 /* Sources */,
 				DAC4B48525484F7C00863848 /* Frameworks */,
 				DAC4B48625484F7C00863848 /* Resources */,
+				C9F0AE689522C135C93AE64C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +174,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29CD43011096CA83654D8C44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleUICollectionView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9F0AE689522C135C93AE64C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleUICollectionView/Pods-SampleUICollectionView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleUICollectionView/Pods-SampleUICollectionView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleUICollectionView/Pods-SampleUICollectionView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAC4B48425484F7C00863848 /* Sources */ = {
@@ -290,7 +370,7 @@
 		};
 		DAC4B49D25484F7C00863848 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAC4B4A12548514000863848 /* ApiConfig.xcconfig */;
+			baseConfigurationReference = 9820E8F4054DD3615934E51E /* Pods-SampleUICollectionView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +390,7 @@
 		};
 		DAC4B49E25484F7C00863848 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA641C287A1CC7D858819DD2 /* Pods-SampleUICollectionView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
